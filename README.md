@@ -13,6 +13,38 @@ This application uses **Long Short-Term Memory (LSTM)** neural networks to analy
 
 ---
 
+## Project Structure
+
+```text
+Cryptoapp/
+├── backend/
+│   ├── main.py
+│   ├── requirements.txt
+│   ├── notebooks/
+│   │   ├── README.md
+│   │   └── train_model.ipynb
+│   └── src/
+│       ├── data_fetcher.py
+│       ├── model.py
+│       └── utils.py
+├── frontend/
+│   ├── package.json
+│   ├── vite.config.js
+│   ├── src/
+│   │   ├── api.js
+│   │   ├── App.jsx
+│   │   ├── App.css
+│   │   ├── index.css
+│   │   └── components/
+│   │       ├── ChartComponent.jsx
+│   │       ├── MetricsPanel.jsx
+│   │       ├── PredictedPricesTable.jsx
+│   │       └── RawDataTable.jsx
+└── README.md
+```
+
+---
+
 ## Architecture & Tech Stack
 
 ### Backend
