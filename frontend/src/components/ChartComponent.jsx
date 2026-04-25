@@ -34,13 +34,13 @@ const baseOptions = (currency = true) => ({
   },
   scales: {
     x: {
-      grid: { color: 'rgba(148, 163, 184, 0.18)' },
-      ticks: { color: '#94a3b8', maxTicksLimit: 12, font: { size: 13 } },
+      grid: { color: 'rgba(100, 116, 139, 0.12)' },
+      ticks: { color: '#64748b', maxTicksLimit: 12, font: { size: 13 } },
     },
     y: {
-      grid: { color: 'rgba(148, 163, 184, 0.18)' },
+      grid: { color: 'rgba(100, 116, 139, 0.12)' },
       ticks: {
-        color: '#94a3b8',
+        color: '#64748b',
         font: { size: 13 },
         callback: (value) => (currency ? '$' + Number(value).toLocaleString() : Number(value).toLocaleString()),
       },
@@ -49,16 +49,16 @@ const baseOptions = (currency = true) => ({
   plugins: {
     legend: {
       position: 'bottom',
-      labels: { color: '#cbd5e1', usePointStyle: true, boxWidth: 10, boxHeight: 10, padding: 18, font: { size: 13 } },
+      labels: { color: '#475569', usePointStyle: true, boxWidth: 10, boxHeight: 10, padding: 18, font: { size: 13 } },
     },
     tooltip: {
-      backgroundColor: 'rgba(15, 23, 42, 0.96)',
-      titleColor: '#e2e8f0',
-      bodyColor: '#cbd5e1',
-      borderColor: 'rgba(148, 163, 184, 0.35)',
+      backgroundColor: 'rgba(255, 255, 255, 0.96)',
+      titleColor: '#0f172a',
+      bodyColor: '#475569',
+      borderColor: 'rgba(100, 116, 139, 0.25)',
       borderWidth: 1,
       padding: 12,
-      cornerRadius: 12,
+      cornerRadius: 6,
       callbacks: {
         label(context) {
           const label = context.dataset.label ? `${context.dataset.label}: ` : '';
@@ -85,7 +85,7 @@ export const PriceVolumeChart = ({ data }) => {
         data: data.map((d) => d.volume),
         backgroundColor: 'rgba(37, 99, 235, 0.25)',
         yAxisID: 'y1',
-        borderRadius: 3,
+        borderRadius: 4,
       },
       {
         type: 'line',
@@ -130,7 +130,7 @@ export const PriceVolumeChart = ({ data }) => {
   options.scales.y1 = {
     position: 'right',
     grid: { drawOnChartArea: false },
-    ticks: { color: '#94a3b8', font: { size: 12 } },
+    ticks: { color: '#64748b', font: { size: 12 } },
   };
   return <Bar data={chartData} options={options} />;
 };

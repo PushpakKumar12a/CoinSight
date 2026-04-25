@@ -15,13 +15,13 @@
   height: calc(100vh - 48px);
   overflow: auto;
   scrollbar-width: thin;
-  scrollbar-color: rgba(100, 116, 139, 0.45) rgba(15, 23, 42, 0.08);
+  scrollbar-color: rgba(100, 116, 139, 0.25) rgba(0, 0, 0, 0.05);
   padding: 24px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   border: 1px solid var(--border);
-  border-radius: 28px;
+  border-radius: 8px;
   background: var(--surface);
   box-shadow: var(--shadow);
   backdrop-filter: blur(18px);
@@ -36,12 +36,12 @@
 .brand-icon {
   width: 52px;
   height: 52px;
-  border-radius: 18px;
+  border-radius: 8px;
   display: grid;
   place-items: center;
   color: var(--accent-strong);
   background: var(--accent-soft);
-  border: 1px solid rgba(37, 99, 235, 0.16);
+  border: 1px solid rgba(15, 82, 186, 0.16);
 }
 
 .brand-kicker {
@@ -66,8 +66,8 @@
   flex-direction: column;
   gap: 18px;
   padding: 20px;
-  border-radius: 24px;
-  background: rgba(15, 23, 42, 0.58);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.65);
   border: 1px solid var(--border);
 }
 
@@ -83,7 +83,7 @@
   gap: 8px;
   width: fit-content;
   padding: 8px 12px;
-  border-radius: 999px;
+  border-radius: 8px;
   background: var(--accent-soft);
   color: var(--accent-strong);
   font-size: 0.7rem;
@@ -159,7 +159,7 @@
 
 .stepper-button {
   border: 1px solid var(--border-strong);
-  border-radius: 12px;
+  border-radius: 8px;
   height: 40px;
   display: grid;
   place-items: center;
@@ -172,7 +172,7 @@
 }
 
 .stepper-button:hover {
-  border-color: rgba(37, 99, 235, 0.35);
+  border-color: rgba(15, 82, 186, 0.35);
 }
 
 .stepper-button:active {
@@ -183,7 +183,7 @@
   width: 100%;
   height: 40px;
   border: 1px solid var(--border-strong);
-  border-radius: 12px;
+  border-radius: 8px;
   background: var(--surface-strong);
   color: var(--text);
   text-align: center;
@@ -204,7 +204,7 @@
 .control-select {
   appearance: none;
   border: 1px solid var(--border-strong);
-  border-radius: 16px;
+  border-radius: 8px;
   padding: 14px 16px;
   color: var(--text);
   font-size: 0.88rem;
@@ -214,7 +214,7 @@
 
 .control-input {
   border: 1px solid var(--border-strong);
-  border-radius: 16px;
+  border-radius: 8px;
   padding: 14px 16px;
   color: var(--text);
   font-size: 0.88rem;
@@ -229,16 +229,16 @@
 .submit-button:focus-visible,
 .stepper-button:focus-visible,
 .stepper-input:focus-visible {
-  outline: 2px solid rgba(37, 99, 235, 0.3);
+  outline: 2px solid rgba(15, 82, 186, 0.3);
   outline-offset: 2px;
 }
 
 .control-select:hover {
-  border-color: rgba(37, 99, 235, 0.25);
+  border-color: rgba(15, 82, 186, 0.25);
 }
 
 .control-input:hover {
-  border-color: rgba(37, 99, 235, 0.25);
+  border-color: rgba(15, 82, 186, 0.25);
 }
 
 .field-help {
@@ -255,7 +255,7 @@
 .submit-button {
   margin-top: 4px;
   border: 0;
-  border-radius: 16px;
+  border-radius: 8px;
   padding: 14px 16px;
   display: inline-flex;
   align-items: center;
@@ -268,7 +268,7 @@
   letter-spacing: 0.01em;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
-  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.16);
+  box-shadow: 0 12px 28px rgba(15, 82, 186, 0.16);
 }
 
 .submit-button:hover:not(:disabled) {
@@ -287,8 +287,8 @@
   align-items: flex-start;
   gap: 10px;
   padding: 14px 16px;
-  border-radius: 18px;
-  background: rgba(15, 23, 42, 0.58);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.65);
   border: 1px solid var(--border);
   color: var(--muted);
   line-height: 1.5;
@@ -317,14 +317,14 @@
   position: relative;
   overflow: hidden;
   padding: 28px;
-  border-radius: 28px;
+  border-radius: 8px;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   gap: 24px;
   background:
-    radial-gradient(circle at top right, rgba(37, 99, 235, 0.12), transparent 26%),
-    radial-gradient(circle at bottom left, rgba(15, 118, 110, 0.1), transparent 22%),
+    radial-gradient(circle at top right, rgba(15, 82, 186, 0.12), transparent 26%),
+    radial-gradient(circle at bottom left, rgba(13, 148, 136, 0.1), transparent 22%),
     var(--surface);
 }
 
@@ -350,9 +350,9 @@
 
 .meta-card {
   padding: 14px 16px;
-  border-radius: 18px;
+  border-radius: 8px;
   border: 1px solid var(--border);
-  background: rgba(15, 23, 42, 0.58);
+  background: rgba(255, 255, 255, 0.65);
 }
 
 .meta-card span,
@@ -374,7 +374,7 @@
 }
 
 .alert {
-  border-radius: 20px;
+  border-radius: 8px;
   padding: 16px 18px;
   display: flex;
   align-items: flex-start;
@@ -393,9 +393,9 @@
 }
 
 .alert-error {
-  background: rgba(185, 28, 28, 0.08);
-  border-color: rgba(185, 28, 28, 0.18);
-  color: #7f1d1d;
+  background: rgba(220, 38, 38, 0.1);
+  border-color: rgba(220, 38, 38, 0.2);
+  color: #991b1b;
 }
 
 .content-stack {
@@ -412,11 +412,11 @@
 
 .metric-card {
   padding: 18px;
-  border-radius: 22px;
+  border-radius: 8px;
 }
 
 .metric-card-subtle {
-  background: rgba(15, 23, 42, 0.52);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .metric-value {
@@ -448,16 +448,16 @@
 }
 
 .trend-positive {
-  color: #0f766e;
+  color: #0d9488;
 }
 
 .trend-negative {
-  color: #b91c1c;
+  color: #dc2626;
 }
 
 .panel {
   overflow: hidden;
-  border-radius: 28px;
+  border-radius: 8px;
 }
 
 .chart-panel {
@@ -525,7 +525,7 @@
   gap: 12px;
   text-align: center;
   padding: 24px;
-  background: rgba(2, 6, 23, 0.72);
+  background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(10px);
 }
 
@@ -545,7 +545,7 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  border: 3px solid rgba(37, 99, 235, 0.14);
+  border: 3px solid rgba(15, 82, 186, 0.14);
   border-top-color: var(--accent);
   animation: spin 0.9s linear infinite;
 }
@@ -571,12 +571,12 @@
 .empty-icon {
   width: 72px;
   height: 72px;
-  border-radius: 22px;
+  border-radius: 8px;
   display: grid;
   place-items: center;
   color: var(--accent-strong);
   background: var(--accent-soft);
-  border: 1px solid rgba(37, 99, 235, 0.16);
+  border: 1px solid rgba(15, 82, 186, 0.16);
 }
 
 .empty-state h3 {
@@ -596,9 +596,9 @@
   flex-direction: column;
   gap: 8px;
   padding: 16px;
-  border-radius: 18px;
+  border-radius: 8px;
   border: 1px solid var(--border);
-  background: rgba(15, 23, 42, 0.58);
+  background: rgba(255, 255, 255, 0.65);
   text-align: left;
 }
 
@@ -624,7 +624,7 @@
   overflow-x: auto;
   scrollbar-gutter: stable both-edges;
   scrollbar-width: thin;
-  scrollbar-color: rgba(100, 116, 139, 0.45) rgba(15, 23, 42, 0.08);
+  scrollbar-color: rgba(100, 116, 139, 0.25) rgba(0, 0, 0, 0.05);
   padding: 0 18px 20px;
 }
 
@@ -634,18 +634,18 @@
 }
 
 .table-wrap::-webkit-scrollbar-track {
-  background: rgba(15, 23, 42, 0.06);
-  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
 }
 
 .table-wrap::-webkit-scrollbar-thumb {
-  background: rgba(100, 116, 139, 0.4);
-  border-radius: 999px;
-  border: 2px solid rgba(15, 23, 42, 0.06);
+  background: rgba(100, 116, 139, 0.2);
+  border-radius: 8px;
+  border: 2px solid rgba(0, 0, 0, 0.04);
 }
 
 .table-wrap::-webkit-scrollbar-thumb:hover {
-  background: rgba(100, 116, 139, 0.6);
+  background: rgba(100, 116, 139, 0.4);
 }
 
 .sidebar::-webkit-scrollbar {
@@ -653,18 +653,18 @@
 }
 
 .sidebar::-webkit-scrollbar-track {
-  background: rgba(15, 23, 42, 0.06);
-  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
 }
 
 .sidebar::-webkit-scrollbar-thumb {
-  background: rgba(100, 116, 139, 0.4);
-  border-radius: 999px;
-  border: 2px solid rgba(15, 23, 42, 0.06);
+  background: rgba(100, 116, 139, 0.2);
+  border-radius: 8px;
+  border: 2px solid rgba(0, 0, 0, 0.04);
 }
 
 .sidebar::-webkit-scrollbar-thumb:hover {
-  background: rgba(100, 116, 139, 0.6);
+  background: rgba(100, 116, 139, 0.4);
 }
 
 .raw-table {
@@ -686,8 +686,8 @@
   position: sticky;
   top: 0;
   z-index: 1;
-  background: rgba(15, 23, 42, 0.95);
-  color: #cbd5e1;
+  background: rgba(241, 245, 249, 0.95);
+  color: #475569;
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -727,12 +727,12 @@
 
 .prediction-table .change-column.positive,
 .prediction-table .pct-column.positive {
-  color: #0f766e;
+  color: #0d9488;
 }
 
 .prediction-table .change-column.negative,
 .prediction-table .pct-column.negative {
-  color: #b91c1c;
+  color: #dc2626;
 }
 
 @keyframes spin {
@@ -772,7 +772,7 @@
   .panel,
   .metric-card,
   .sidebar-panel {
-    border-radius: 22px;
+    border-radius: 8px;
   }
 
   .sidebar,
