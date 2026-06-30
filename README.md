@@ -1,4 +1,4 @@
-# Crypto Price Prediction App
+# CoinSight - Crypto Price Prediction App
 
 > A full-stack web application that forecasts cryptocurrency prices using LSTM neural networks — built with a Python/FastAPI backend and a React frontend.
 
@@ -16,7 +16,7 @@ This application uses **Long Short-Term Memory (LSTM)** neural networks to analy
 ## Project Structure
 
 ```text
-Cryptoapp/
+CoinSight/
 ├── backend/
 │   ├── main.py
 │   ├── requirements.txt
